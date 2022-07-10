@@ -21,7 +21,7 @@ tanndal, tanndale">
    <title>TRANDALsPOSTen 2007</title>
 </head>
 
-<body><!--'"</title></head>-->
+<body>
 
 <script type="text/javascript">
 //OwnerIQ
@@ -38,17 +38,7 @@ oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
 })();
 }
-//Google Analytics
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount','UA-21402695-19']);
-_gaq.push(['_setDomainName','tripod.com']);
-_gaq.push(['_setCustomVar',1,'member_name','jq_public00',3]);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+
 //Lycos Init
 function getReferrer() {
 var all= this.document.cookie;
@@ -80,7 +70,7 @@ if (end == -1) end = full.length;
 return unescape(full.substring(start, end)).split(" ").join("+");
 }
 function generateHref(atag, template){
-atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!'); 
+atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!');
 }
 var lycos_ad = Array();
 var lycos_onload_timer;
@@ -100,359 +90,18 @@ var lycos_ad_track_served = "";
 var lycos_search_query = getQuery();
 </script>
 
-<script type="text/javascript" src="catman/init.js"></script>
-
-<script type='text/javascript'>
- var googletag = googletag || {};
- googletag.cmd = googletag.cmd || [];
- (function() {
-   var gads = document.createElement('script');
-   gads.async = true;
-   gads.type = 'text/javascript';
-   var useSSL = 'https:' == document.location.protocol;
-   gads.src = (useSSL ? 'https:' : 'http:') +
-     '//www.googletagservices.com/tag/js/gpt.js';
-   var node = document.getElementsByTagName('script')[0];
-   node.parentNode.insertBefore(gads, node);
- })();
-</script>
-
-<script type='text/javascript'>
- googletag.cmd.push(function() {
-   googletag.defineSlot('/95963596/TRI_300X250_dfp', [300, 250], 'div-gpt-ad-1450204159126-0').addService(googletag.pubads());
-   googletag.defineSlot('/95963596/TRI_above_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-1').addService(googletag.pubads());
-   googletag.defineSlot('/95963596/TRI_below_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-2').addService(googletag.pubads());
-   googletag.pubads().enableSingleRequest();
-   googletag.enableServices();
- });
-</script>
-
-
-<script type="text/javascript"> 
-(function(isV)
-{
-    if( !isV )
-    {
-        return;
-    }
-    var adMgr = new AdManager();
-    var lycos_prod_set = adMgr.chooseProductSet();
-    var slots = ["leaderboard", "leaderboard2", "toolbar_image", "toolbar_text", "smallbox", "top_promo", "footer2", "slider"];
-    var adCat = this.lycos_ad_category;
-    adMgr.setForcedParam('page', (adCat && adCat.dmoz) ? adCat.dmoz : 'member');
-    if (this.lycos_search_query)
-    {
-        adMgr.setForcedParam("keyword", this.lycos_search_query);
-    } 
-    else if(adCat && adCat.find_what)
-    {
-        adMgr.setForcedParam('keyword', adCat.find_what);
-    }
-    
-    for (var s in slots)
-    {
-        var slot = slots[s];
-        if (adMgr.isSlotAvailable(slot))
-        {
-            this.lycos_ad[slot] = adMgr.getSlot(slot);
-        }
-    }
-
-    adMgr.renderHeader();
-    adMgr.renderFooter();
-}((function() {
-
-var w = 0, h = 0, minimumThreshold = 300;
-
-if (top == self)
-{
-    return true;
-}
-if (typeof(window.innerWidth) == 'number' )
-{
-    w = window.innerWidth;
-    h = window.innerHeight;
-}
-else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight))
-{
-    w = document.documentElement.clientWidth;
-    h = document.documentElement.clientHeight;
-}
-else if (document.body && (document.body.clientWidth || document.body.clientHeight))
-{
-    w = document.body.clientWidth;
-    h = document.body.clientHeight;
-}
-return ((w > minimumThreshold) && (h > minimumThreshold));
-}())));
 
 
 
 
-window.onload = function()
-{
-    var f = document.getElementById("FooterAd");
-    var b = document.getElementsByTagName("body")[0];
-    b.appendChild(f);
-    f.style.display = "block";
-    document.getElementById('lycosFooterAdiFrame').src = '/adm/ad/footerAd.iframe.html';
-    
-
-
-    
-    // DOM Inj Ad
-    (function(isTrellix)
-    {
-        var e = document.createElement('iframe');
-        e.style.border = '0';
-        e.style.margin = 0;
-        e.style.display = 'block';
-        e.style.cssFloat = 'right';
-        e.style.height = '254px';
-        e.style.overflow = 'hidden';
-        e.style.padding = 0;
-        e.style.width = '300px';
-
-
-        var isBlokedByDomain = function( href )
-        {
-            var blockedDomains = [
-                "ananyaporn13000.tripod.com",
-                "xxxpornxxx.tripod.com"
-            ];
-            var flag = false;
-            
-            for( var i=0; i<blockedDomains.length; i++ )
-            {
-                if( href.search( blockedDomains[ i ] ) >= 0 )
-                {
-                    flag = true;
-                }
-            }
-            return flag;
-        }
-
-        var getMetaContent = function( metaName )
-        {
-            var metas = document.getElementsByTagName('meta');
-            for (i=0; i<metas.length; i++)
-            { 
-                if( metas[i].getAttribute("name") == metaName )
-                { 
-                    return metas[i].getAttribute("content"); 
-                } 
-            }
-            return false;
-        }
-        
-        var getCommentNodes = function(regexPattern)
-        {
-            var nodes = {};
-            var nodesA = [];
-            var preferredNodesList = ['a', 'c', 'b'];
-        
-            (function getNodesThatHaveComments(n, pattern)
-            {
-                if (n.hasChildNodes())
-                {
-                    if (n.tagName === 'IFRAME')
-                    {
-                        return false;
-                    }
-                    for (var i = 0; i < n.childNodes.length; i++)
-                    {
-                        if ((n.childNodes[i].nodeType === 8) && (pattern.test(n.childNodes[i].nodeValue)))
-                        {
-                            var areaName = pattern.exec(n.childNodes[i].nodeValue)[1];
-                            nodes[areaName] = n;
-                        }
-                        else if (n.childNodes[i].nodeType === 1)
-                        {
-                            getNodesThatHaveComments(n.childNodes[i], pattern);
-                        }
-                    }
-                }
-            }(document.body, regexPattern));
-
-            for (var i in preferredNodesList)
-            {
-                if (nodes[preferredNodesList[i]])
-                {
-                    if( isTrellix && nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode )
-                    {
-                        nodesA.push(nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode);
-                    }
-                    else
-                    {
-                        nodesA.push( nodes[preferredNodesList[i]] );
-                    }
-                }
-            }
-            return nodesA;
-        }
-        
-        
-        var properNode = null;
-        var areaNodes = getCommentNodes( new RegExp( '^area Type="area_(\\w+)"' ) );
-
-        for (var i = 0; i < areaNodes.length; i++)
-        {
-            var a = parseInt(getComputedStyle(areaNodes[i]).width);
-            if ((a >= 300) && (a <= 400))
-            {
-                properNode = areaNodes[i];
-                break;
-            }
-        }
-
-
-        var propertyName = getMetaContent("property") || false;
-        if( isTrellix && (properNode) )
-        {
-            e.src = '/adm/ad/injectAd.iframe.html';
-            properNode.insertBefore(e, properNode.firstChild);
-        }
-        else if( isTrellix && !( properNode ) ) // Slap the ad eventhought there is no alocated slot
-        {
-            e.src = '/adm/ad/injectAd.iframe.html';
-            e.style.cssFloat = 'none';
-            var cdiv = document.createElement('div');
-            cdiv.style = "width:300px;margin:10px auto;";
-            cdiv.appendChild( e );
-            b.insertBefore(cdiv, b.lastChild);
-        }
-        else if( !isBlokedByDomain( location.href ) )
-        {
-            var injF = document.createElement('iframe');
-            injF.style.border = '0';
-            injF.style.margin = 0;
-            injF.style.display = 'block';
-            injF.style.cssFloat = 'none';
-            injF.style.height = '254px';
-            injF.style.overflow = 'hidden';
-            injF.style.padding = 0;
-            injF.style.width = '300px';
-            injF.src = '/adm/ad/injectAd.iframe.html';
-
-            if( b && ( !isTrellix || ( typeof isTrellix == "undefined" ) ) ) // All other tripod props
-            {
-                var cdiv = document.createElement('div');
-                cdiv.style = "width:300px;margin:10px auto;";
-                cdiv.appendChild( injF );
-                b.insertBefore(cdiv, b.lastChild);
-            } 
-        }
-  }( document.isTrellix ));
-}
-
-</script>
-
-<div id="tb_container" style="background:#DFDCCF; border-bottom:1px solid #393939; position:relative; z-index:999999999!important">
-<!--form name="search" onSubmit="return searchit()" id='header_search' >
-<input type="text" placeholder="Search" size=30 name="search2" value="">
-<input type="button" value="Go!" onClick="searchit()">
-</form>
-<style>
-form#header_search {
-    width: 916px;
-    margin: 0 auto 8px;
-    position: relative;
-}
-
-
-form#header_search input {
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-    padding: 0 8px;
-    box-sizing: border-box;
-    background: #F4F2E9;
-    border: 1px solid #BBB8B8;
-    transition: background-color 300ms ease-out,
-                color 300ms ease;
-}
-
-form#header_search input[type="text"] {
-    width: 100%;
-}
-form#header_search input[type="text"]:focus {
-    border-color: #A2D054;
-    background-color: #fff;
-    box-shadow: 0 0px 12px -4px #A2D054;
-}
 
 
 
-form#header_search input[type="button"] {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    opacity: 1;
-    background: #DFDCCF;
-    color: #463734;
-    width: 125px;
-    cursor: pointer;
-    height: 38px;
-    border: none;
-}
-form#header_search input[type="text"]:focus ~ input[type='button']:hover,
-form#header_search input[type='button']:hover {
-    background-color: #A5CE56;
-    color: #fff;
-}
-form#header_search input[type="text"]:focus ~ input[type='button'] {
-    background-color: #52AEDF;
-    color: #fff;
-}
 
-</style>
 
-<script>
-function searchit(){
-    
-    // determine environment 
-    var search_env 
-    if (lycos_ad_www_server.indexOf(".pd.") > -1) {
-       search_env = 'http://search51.pd.lycos.com/a/';
-    } else if (lycos_ad_www_server.indexOf(".qa.") > -1) {
-       search_env = 'http://search51.qa.lycos.com/a/';
-    } else {
-       search_env = 'http://search51.lycos.com/a/';
-    }
 
-var search_term = encodeURIComponent(document.search.search2.value)
-var search_url = search_env+search_term;
-window.open(search_url);
+ <!-- added 7/22 -->
 
-return false
-}
-</script-->
-<style>
-    .adCenterClass{margin:0 auto}
-</style>
-<div id="tb_ad" class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
-
-<div id="ad_container" style="display:block!important; float:left; width:728px ">
-<script type="text/javascript">
-if (typeof lycos_ad !== "undefined" && "leaderboard" in lycos_ad) {
-  document.write(lycos_ad['leaderboard']);
-}
-</script>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-if (typeof lycos_ad !== "undefined" && "slider" in lycos_ad) {
-  document.write(lycos_ad['slider']);
-}
-</script> <!-- added 7/22 -->
-<div id="FooterAd" style="background:#DFDCCF; border-top:1px solid #393939; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:90px!important"> 
-<div class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
-<div id="footerAd_container" style="display:block!important; float:left; width:728px">
-<iframe id="lycosFooterAdiFrame" style="border:0; display:block; float:left; height:96px; overflow:hidden; padding:0; width:750px"></iframe>
-</div>
-</div>
-</div>
 
 
 <body bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b">
@@ -483,25 +132,25 @@ COMMENTS  -->
 
 <a name="topp"></a>
 <center>
-<img src="vik-lin4.bmp" alt="Decorative Viking line in black" hspace="2" vspace="2" border="0" height="25" width="500">
+<img src="img/vik-lin4.bmp" alt="Decorative Viking line in black" hspace="2" vspace="2" border="0" height="25" width="500">
 
 <!-- COMMENT: Start of LIGHT AQUA-BLUE TABLE -->
 <table border="0" cols="1" width="95%" height="55" bgcolor="aqua"><tr><td>
 
 <center>
-<a href="index-1.htm"><img src="index001.jpg" alt="HOVUDSIDE &nbsp;&nbsp; Main" hspace="1" vspace="1" border="2" height="50" width="100" align="center">
+<a href="index-1.htm"><img src="img/index001.jpg" alt="HOVUDSIDE &nbsp;&nbsp; Main" hspace="1" vspace="1" border="2" height="50" width="100" align="center">
 </a>
 
-<a href="medlem01.htm#topp"><img src="medlem01.jpg" alt="GRENDELAG &nbsp; Grange" hspace="1" vspace="1" border="2" height="50" width="100" align="center">
+<a href="medlem01.htm#topp"><img src="img/medlem01.jpg" alt="GRENDELAG &nbsp; Grange" hspace="1" vspace="1" border="2" height="50" width="100" align="center">
 </a>
 
-<a href="forslag1.htm#topp"><img src="forslag1.jpg" alt="INNLEGG &nbsp; &nbsp; Input." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
+<a href="forslag1.htm#topp"><img src="img/forslag1.jpg" alt="INNLEGG &nbsp; &nbsp; Input." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
 </a>
 
-<a href="soge-001.htm#topp"><img src="soge-001.jpg" alt="SOGE &nbsp;&nbsp; History." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
+<a href="soge-001.htm#topp"><img src="img/soge-001.jpg" alt="SOGE &nbsp;&nbsp; History." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
 </a>
 
-<a href="naering1.htm#topp"><img src="naering1.jpg" alt="N&AElig;RING &nbsp;&nbsp; Business." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
+<a href="naering1.htm#topp"><img src="img/naering1.jpg" alt="N&AElig;RING &nbsp;&nbsp; Business." hspace="1" vspace="1" border="2" height="50" width="100" align="center">
 </a>
 </center>
 
@@ -510,11 +159,11 @@ COMMENTS  -->
 <!-- COMMENT: End of BLUE TABLE -->
 
 <center>
-<img src="trandal4.bmp" alt="Trandal (gotisk)" hspace="0" vspace="0" border="0" height="44" width="154" align="center">
+<img src="img/trandal4.bmp" alt="Trandal (gotisk)" hspace="0" vspace="0" border="0" height="44" width="154" align="center">
 </center>
 
 <center>
-<img src="trkrnytt.jpg" alt="Nytt fr&aring; Trandal krins" hspace="0" vspace="0" border="0" height="116" width="432" align="center">
+<img src="img/trkrnytt.jpg" alt="Nytt fr&aring; Trandal krins" hspace="0" vspace="0" border="0" height="116" width="432" align="center">
 </center>
 
 <center>
@@ -573,7 +222,7 @@ COMMENTS  -->
 <p><center><u><b>2006 KALENDEREN</b> - - <i>The 2006 Calender</i></u></center>
 
 <a href="runestav.htm#topp">
-<img src="runestaz.jpg" alt="Rune kalendar stav ca. 27 Kb" hspace="0" vspace="0" border="0" height="50" width="400" align="center">
+<img src="img/runestaz.jpg" alt="Rune kalendar stav ca. 27 Kb" hspace="0" vspace="0" border="0" height="50" width="400" align="center">
 
 <center><font size="-2">NORDISK ALMANAKK - - Nordic Almanac</font></center></a>
 
@@ -646,12 +295,12 @@ COMMENTS  -->
 <a name="11januar2006"></a>
 &nbsp; &#149; &nbsp; 11. januar 2006 ca. kl. 20:25-<br>
 <br>
-<img src="flagg-no.gif" alt="P&aring; norsk - In Norwegian" hspace="5" vspace="1" border="0" height="19" width="12">
-Trandal slekt: &nbsp; &nbsp; 
+<img src="img/flagg-no.gif" alt="P&aring; norsk - In Norwegian" hspace="5" vspace="1" border="0" height="19" width="12">
+Trandal slekt: &nbsp; &nbsp;
 
-<img src="constr10.jpg" alt="JPG, STOPP - ikkje ferdig enno." hspace="3" vspace="1" border="0" height="20" width="20">
+<img src="img/constr10.jpg" alt="JPG, STOPP - ikkje ferdig enno." hspace="3" vspace="1" border="0" height="20" width="20">
 
-<b><a href="constr10.jpg">P&aring;kj&oslash;rt av bil.</a>  AmerikaPer vilde g&aring; over gata i Brooklyn, men vart kastet ca. 3 til 5 meter igjennom luftet i traffikken. Mirakelen var at, istadenfor &aring; verte drept momentant, han vart nesten ikkje skadet i det heile tatt! Det ser ut som han fekk berre nokre sm&aring; s&aring;r(?) ...Bilen kom i full fart r&aring;kj&oslash;yrande rundt hj&oslash;rnet, rett inni fotgjenger overgangsfeltet.</b><br>
+<b><a href="img/constr10.jpg">P&aring;kj&oslash;rt av bil.</a>  AmerikaPer vilde g&aring; over gata i Brooklyn, men vart kastet ca. 3 til 5 meter igjennom luftet i traffikken. Mirakelen var at, istadenfor &aring; verte drept momentant, han vart nesten ikkje skadet i det heile tatt! Det ser ut som han fekk berre nokre sm&aring; s&aring;r(?) ...Bilen kom i full fart r&aring;kj&oslash;yrande rundt hj&oslash;rnet, rett inni fotgjenger overgangsfeltet.</b><br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;<i>Trandal family: &nbsp; &nbsp; <u>Hit by a car</u>. AmerikaPer wanted to cross the street in Brooklyn, but was thrown approx. 10 to 15 feet through the air in the traffic. The miracle was that, instead of being killed instantly, he was almost totally unhurt! It looks like he received only a few minor abrasions & lacerations(?) ...The car came speeding around the corner, right into the pedestrian crossing area.</i><br>
 
 <br>
@@ -668,13 +317,13 @@ Trandal slekt: &nbsp; &nbsp;
 <p><br></p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil.gif" alt="Topp" hspace="0" vspace="0" border="0" height="25" width="31"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil.gif" alt="Topp" hspace="0" vspace="0" border="0" height="25" width="31"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin4.bmp" alt="Decorative Viking line in black" hspace="2" vspace="2" border="0" height="25" width="500">
+<img src="img/vik-lin4.bmp" alt="Decorative Viking line in black" hspace="2" vspace="2" border="0" height="25" width="500">
 </center>
 
 <center>
@@ -703,7 +352,7 @@ END COMMENT -->
 reserved</font>
 </div>
 <center>
-<img src="hidco-03.jpg" alt="Hidco logo JPG" hspace="10" vspace="5" border="1" height="70" width="100">
+<img src="img/hidco-03.jpg" alt="Hidco logo JPG" hspace="10" vspace="5" border="1" height="70" width="100">
 </center>
 <center><font size="-2">N-6183 TRANDAL &nbsp; - - - &nbsp; New York City
 11209 USA</font></center>
@@ -792,7 +441,7 @@ hspace="1" vspace="0" border="0" height="20" width="20" align="left"></br>
 <br>
 <a href="constr10.jpg"><img/ src="lenkjar2.jpg" alt="Lenkjar samleside - 7Kb"
 hspace="0" vspace="1" border="0" height="23" width="273" align="left">
-&nbsp; <b>Turisme</b> - - <i>Tourism</i></a> 
+&nbsp; <b>Turisme</b> - - <i>Tourism</i></a>
 <img/ src="constr10.jpg" alt="JPG STOPP - ikkje ferdig enno."
 hspace="1" vspace="0" border="0" height="20" width="20"></br>
 

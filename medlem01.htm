@@ -27,17 +27,7 @@ oiq.src = document.location.protocol + '//px.owneriq.net/stas/s/lycosn.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oiq, s);
 })();
 }
-//Google Analytics
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount','UA-21402695-19']);
-_gaq.push(['_setDomainName','tripod.com']);
-_gaq.push(['_setCustomVar',1,'member_name','jq_public00',3]);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+
 //Lycos Init
 function getReferrer() {
 var all= this.document.cookie;
@@ -69,7 +59,7 @@ if (end == -1) end = full.length;
 return unescape(full.substring(start, end)).split(" ").join("+");
 }
 function generateHref(atag, template){
-atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!'); 
+atag.href=template.replace('_MYURL_', window.location.href.replace('http://', '')).replace('_MYTITLE_','Check%20out%20this%20Tripod%20Member%20site!');
 }
 var lycos_ad = Array();
 var lycos_onload_timer;
@@ -89,359 +79,18 @@ var lycos_ad_track_served = "";
 var lycos_search_query = getQuery();
 </script>
 
-<script type="text/javascript" src="catman/init.js"></script>
-
-<script type='text/javascript'>
- var googletag = googletag || {};
- googletag.cmd = googletag.cmd || [];
- (function() {
-   var gads = document.createElement('script');
-   gads.async = true;
-   gads.type = 'text/javascript';
-   var useSSL = 'https:' == document.location.protocol;
-   gads.src = (useSSL ? 'https:' : 'http:') +
-     '//www.googletagservices.com/tag/js/gpt.js';
-   var node = document.getElementsByTagName('script')[0];
-   node.parentNode.insertBefore(gads, node);
- })();
-</script>
-
-<script type='text/javascript'>
- googletag.cmd.push(function() {
-   googletag.defineSlot('/95963596/TRI_300X250_dfp', [300, 250], 'div-gpt-ad-1450204159126-0').addService(googletag.pubads());
-   googletag.defineSlot('/95963596/TRI_above_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-1').addService(googletag.pubads());
-   googletag.defineSlot('/95963596/TRI_below_728x90_dfp', [728, 90], 'div-gpt-ad-1450204159126-2').addService(googletag.pubads());
-   googletag.pubads().enableSingleRequest();
-   googletag.enableServices();
- });
-</script>
-
-
-<script type="text/javascript"> 
-(function(isV)
-{
-    if( !isV )
-    {
-        return;
-    }
-    var adMgr = new AdManager();
-    var lycos_prod_set = adMgr.chooseProductSet();
-    var slots = ["leaderboard", "leaderboard2", "toolbar_image", "toolbar_text", "smallbox", "top_promo", "footer2", "slider"];
-    var adCat = this.lycos_ad_category;
-    adMgr.setForcedParam('page', (adCat && adCat.dmoz) ? adCat.dmoz : 'member');
-    if (this.lycos_search_query)
-    {
-        adMgr.setForcedParam("keyword", this.lycos_search_query);
-    } 
-    else if(adCat && adCat.find_what)
-    {
-        adMgr.setForcedParam('keyword', adCat.find_what);
-    }
-    
-    for (var s in slots)
-    {
-        var slot = slots[s];
-        if (adMgr.isSlotAvailable(slot))
-        {
-            this.lycos_ad[slot] = adMgr.getSlot(slot);
-        }
-    }
-
-    adMgr.renderHeader();
-    adMgr.renderFooter();
-}((function() {
-
-var w = 0, h = 0, minimumThreshold = 300;
-
-if (top == self)
-{
-    return true;
-}
-if (typeof(window.innerWidth) == 'number' )
-{
-    w = window.innerWidth;
-    h = window.innerHeight;
-}
-else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight))
-{
-    w = document.documentElement.clientWidth;
-    h = document.documentElement.clientHeight;
-}
-else if (document.body && (document.body.clientWidth || document.body.clientHeight))
-{
-    w = document.body.clientWidth;
-    h = document.body.clientHeight;
-}
-return ((w > minimumThreshold) && (h > minimumThreshold));
-}())));
 
 
 
 
-window.onload = function()
-{
-    var f = document.getElementById("FooterAd");
-    var b = document.getElementsByTagName("body")[0];
-    b.appendChild(f);
-    f.style.display = "block";
-    document.getElementById('lycosFooterAdiFrame').src = '/adm/ad/footerAd.iframe.html';
-    
-
-
-    
-    // DOM Inj Ad
-    (function(isTrellix)
-    {
-        var e = document.createElement('iframe');
-        e.style.border = '0';
-        e.style.margin = 0;
-        e.style.display = 'block';
-        e.style.cssFloat = 'right';
-        e.style.height = '254px';
-        e.style.overflow = 'hidden';
-        e.style.padding = 0;
-        e.style.width = '300px';
-
-
-        var isBlokedByDomain = function( href )
-        {
-            var blockedDomains = [
-                "ananyaporn13000.tripod.com",
-                "xxxpornxxx.tripod.com"
-            ];
-            var flag = false;
-            
-            for( var i=0; i<blockedDomains.length; i++ )
-            {
-                if( href.search( blockedDomains[ i ] ) >= 0 )
-                {
-                    flag = true;
-                }
-            }
-            return flag;
-        }
-
-        var getMetaContent = function( metaName )
-        {
-            var metas = document.getElementsByTagName('meta');
-            for (i=0; i<metas.length; i++)
-            { 
-                if( metas[i].getAttribute("name") == metaName )
-                { 
-                    return metas[i].getAttribute("content"); 
-                } 
-            }
-            return false;
-        }
-        
-        var getCommentNodes = function(regexPattern)
-        {
-            var nodes = {};
-            var nodesA = [];
-            var preferredNodesList = ['a', 'c', 'b'];
-        
-            (function getNodesThatHaveComments(n, pattern)
-            {
-                if (n.hasChildNodes())
-                {
-                    if (n.tagName === 'IFRAME')
-                    {
-                        return false;
-                    }
-                    for (var i = 0; i < n.childNodes.length; i++)
-                    {
-                        if ((n.childNodes[i].nodeType === 8) && (pattern.test(n.childNodes[i].nodeValue)))
-                        {
-                            var areaName = pattern.exec(n.childNodes[i].nodeValue)[1];
-                            nodes[areaName] = n;
-                        }
-                        else if (n.childNodes[i].nodeType === 1)
-                        {
-                            getNodesThatHaveComments(n.childNodes[i], pattern);
-                        }
-                    }
-                }
-            }(document.body, regexPattern));
-
-            for (var i in preferredNodesList)
-            {
-                if (nodes[preferredNodesList[i]])
-                {
-                    if( isTrellix && nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode )
-                    {
-                        nodesA.push(nodes[preferredNodesList[i]].parentNode.parentNode.parentNode.parentNode);
-                    }
-                    else
-                    {
-                        nodesA.push( nodes[preferredNodesList[i]] );
-                    }
-                }
-            }
-            return nodesA;
-        }
-        
-        
-        var properNode = null;
-        var areaNodes = getCommentNodes( new RegExp( '^area Type="area_(\\w+)"' ) );
-
-        for (var i = 0; i < areaNodes.length; i++)
-        {
-            var a = parseInt(getComputedStyle(areaNodes[i]).width);
-            if ((a >= 300) && (a <= 400))
-            {
-                properNode = areaNodes[i];
-                break;
-            }
-        }
-
-
-        var propertyName = getMetaContent("property") || false;
-        if( isTrellix && (properNode) )
-        {
-            e.src = '/adm/ad/injectAd.iframe.html';
-            properNode.insertBefore(e, properNode.firstChild);
-        }
-        else if( isTrellix && !( properNode ) ) // Slap the ad eventhought there is no alocated slot
-        {
-            e.src = '/adm/ad/injectAd.iframe.html';
-            e.style.cssFloat = 'none';
-            var cdiv = document.createElement('div');
-            cdiv.style = "width:300px;margin:10px auto;";
-            cdiv.appendChild( e );
-            b.insertBefore(cdiv, b.lastChild);
-        }
-        else if( !isBlokedByDomain( location.href ) )
-        {
-            var injF = document.createElement('iframe');
-            injF.style.border = '0';
-            injF.style.margin = 0;
-            injF.style.display = 'block';
-            injF.style.cssFloat = 'none';
-            injF.style.height = '254px';
-            injF.style.overflow = 'hidden';
-            injF.style.padding = 0;
-            injF.style.width = '300px';
-            injF.src = '/adm/ad/injectAd.iframe.html';
-
-            if( b && ( !isTrellix || ( typeof isTrellix == "undefined" ) ) ) // All other tripod props
-            {
-                var cdiv = document.createElement('div');
-                cdiv.style = "width:300px;margin:10px auto;";
-                cdiv.appendChild( injF );
-                b.insertBefore(cdiv, b.lastChild);
-            } 
-        }
-  }( document.isTrellix ));
-}
-
-</script>
-
-<div id="tb_container" style="background:#DFDCCF; border-bottom:1px solid #393939; position:relative; z-index:999999999!important">
-<!--form name="search" onSubmit="return searchit()" id='header_search' >
-<input type="text" placeholder="Search" size=30 name="search2" value="">
-<input type="button" value="Go!" onClick="searchit()">
-</form>
-<style>
-form#header_search {
-    width: 916px;
-    margin: 0 auto 8px;
-    position: relative;
-}
-
-
-form#header_search input {
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-    padding: 0 8px;
-    box-sizing: border-box;
-    background: #F4F2E9;
-    border: 1px solid #BBB8B8;
-    transition: background-color 300ms ease-out,
-                color 300ms ease;
-}
-
-form#header_search input[type="text"] {
-    width: 100%;
-}
-form#header_search input[type="text"]:focus {
-    border-color: #A2D054;
-    background-color: #fff;
-    box-shadow: 0 0px 12px -4px #A2D054;
-}
 
 
 
-form#header_search input[type="button"] {
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    opacity: 1;
-    background: #DFDCCF;
-    color: #463734;
-    width: 125px;
-    cursor: pointer;
-    height: 38px;
-    border: none;
-}
-form#header_search input[type="text"]:focus ~ input[type='button']:hover,
-form#header_search input[type='button']:hover {
-    background-color: #A5CE56;
-    color: #fff;
-}
-form#header_search input[type="text"]:focus ~ input[type='button'] {
-    background-color: #52AEDF;
-    color: #fff;
-}
 
-</style>
 
-<script>
-function searchit(){
-    
-    // determine environment 
-    var search_env 
-    if (lycos_ad_www_server.indexOf(".pd.") > -1) {
-       search_env = 'http://search51.pd.lycos.com/a/';
-    } else if (lycos_ad_www_server.indexOf(".qa.") > -1) {
-       search_env = 'http://search51.qa.lycos.com/a/';
-    } else {
-       search_env = 'http://search51.lycos.com/a/';
-    }
 
-var search_term = encodeURIComponent(document.search.search2.value)
-var search_url = search_env+search_term;
-window.open(search_url);
+ <!-- added 7/22 -->
 
-return false
-}
-</script-->
-<style>
-    .adCenterClass{margin:0 auto}
-</style>
-<div id="tb_ad" class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
-
-<div id="ad_container" style="display:block!important; float:left; width:728px ">
-<script type="text/javascript">
-if (typeof lycos_ad !== "undefined" && "leaderboard" in lycos_ad) {
-  document.write(lycos_ad['leaderboard']);
-}
-</script>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-if (typeof lycos_ad !== "undefined" && "slider" in lycos_ad) {
-  document.write(lycos_ad['slider']);
-}
-</script> <!-- added 7/22 -->
-<div id="FooterAd" style="background:#DFDCCF; border-top:1px solid #393939; clear:both; display:none; width:100%!important; position:relative; z-index:999999!important; height:90px!important"> 
-<div class="adCenterClass" style="display:block!important; overflow:hidden; width:916px;">
-<div id="footerAd_container" style="display:block!important; float:left; width:728px">
-<iframe id="lycosFooterAdiFrame" style="border:0; display:block; float:left; height:96px; overflow:hidden; padding:0; width:750px"></iframe>
-</div>
-</div>
-</div>
 
 
 <body bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b">
@@ -457,19 +106,19 @@ COMMENTS  -->
 
 <a name="topp"></a>
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 
 <table border="0" cols="1" width="95%" height="55" bgcolor="#87cefa"><tr><td>
 <center>
-<a href="index-1.htm"><img src="index001.jpg" alt="HOVUDSIDE &nbsp;&nbsp; Main" hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
+<a href="index-1.htm"><img src="img/index001.jpg" alt="HOVUDSIDE &nbsp;&nbsp; Main" hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
 
-<a href="forslag1.htm#topp"><img src="forslag1.jpg" alt="INNLEGG &nbsp; &nbsp; Input." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
+<a href="forslag1.htm#topp"><img src="img/forslag1.jpg" alt="INNLEGG &nbsp; &nbsp; Input." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
 
-<a href="soge-001.htm#topp"><img src="soge-001.jpg" alt="SOGE &nbsp;&nbsp; History." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
+<a href="soge-001.htm#topp"><img src="img/soge-001.jpg" alt="SOGE &nbsp;&nbsp; History." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
 
-<a href="naering1.htm#topp"><img src="naering1.jpg" alt="N&AElig;RING &nbsp;&nbsp; Business." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
+<a href="naering1.htm#topp"><img src="img/naering1.jpg" alt="N&AElig;RING &nbsp;&nbsp; Business." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
 
-<a href="nytt2006.htm#topp"><img src="nytt-001.jpg" alt="NYTT &nbsp;&nbsp; News." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
+<a href="nytt2006.htm#topp"><img src="img/nytt-001.jpg" alt="NYTT &nbsp;&nbsp; News." hspace="1" vspace="1" border="2" height="50" width="100" align="center"></a>
 </center>
 </td></tr></table>
 </center>
@@ -479,7 +128,7 @@ COMMENTS  -->
 </font color=""></font size=""></center>
 
 <center>
-<img src="tr-kr-tv.jpg" alt="Trandal krins WWW - TV" hspace="5" vspace="5" border="0" height="125" width="600">
+<img src="img/tr-kr-tv.jpg" alt="Trandal krins WWW - TV" hspace="5" vspace="5" border="0" height="125" width="600">
 </center>
 
 <center>
@@ -491,10 +140,10 @@ COMMENTS  -->
 <center>
 <font size="-1">
 <b>
-<a href="#grendelag">Trandal krins medlem</a> &nbsp;- -&nbsp; 
-<a href="#vevsamtale">Vev-samtale</a> &nbsp;- -&nbsp; 
-<a href="foedsel2.htm#gratulerer">Gratulerer med dagen!</a> &nbsp;- -&nbsp; 
-<a href="#vevsiderlenkjar">Vevside lenkjar</a> &nbsp;- -&nbsp; 
+<a href="#grendelag">Trandal krins medlem</a> &nbsp;- -&nbsp;
+<a href="#vevsamtale">Vev-samtale</a> &nbsp;- -&nbsp;
+<a href="foedsel2.htm#gratulerer">Gratulerer med dagen!</a> &nbsp;- -&nbsp;
+<a href="#vevsiderlenkjar">Vevside lenkjar</a> &nbsp;- -&nbsp;
 <a href="#filbyting">Fil til byting</a>
 </b><br>
 <br><i>Trandal krins member &nbsp;- -&nbsp; Web-chat &nbsp;- -&nbsp; Happy Birthday &nbsp;- -&nbsp; Webpage links &nbsp;&nbsp;- -&nbsp;&nbsp; Files for sharing</i><br>
@@ -512,7 +161,7 @@ COMMENTS  -->
 <p><i>The grange's Internet page is meant as a way for Trandalers to get information, and to give their own suggestions and comments. Come with ideas, suggestions, ..greetings, photos, ..both good and bad commentary.</i></p>
 
 <center><hr width="95%"></center>
-<center><b>&quot;Det g&aring;r bedre og bedre dag for dag.&quot;</b> &nbsp;&nbsp; ...... &nbsp;&nbsp; 
+<center><b>&quot;Det g&aring;r bedre og bedre dag for dag.&quot;</b> &nbsp;&nbsp; ...... &nbsp;&nbsp;
 <i>&quot;It gets better and better day by day.&quot;</i></center>
 <center><hr width="95%"></center>
 
@@ -521,13 +170,13 @@ COMMENTS  -->
 <br>&nbsp; &nbsp; <i>LOG IN...</i><br>
 
 <br>
-<img src="constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20" align="left">
-<img src="constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20" align="left">
-<img src="constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20" align="left">
+<img src="img/constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20" align="left">
+<img src="img/constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20" align="left">
+<img src="img/constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20" align="left">
 [Orsaka... <i>Sorry</i>]
-<img src="constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20">
-<img src="constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20">
-<img src="constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20">
+<img src="img/constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20">
+<img src="img/constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20">
+<img src="img/constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20">
 <br>
 
 <br><b>Skriv inn medlemsnummeret/passord:</b><br>
@@ -572,9 +221,9 @@ COMMENTS  -->
 <center><hr width="100%"></center>
 
 <center>
-<img src="t-krins.gif" alt="Animated T-Krins logo" hspace="1" vspace="1" border="0" height="48" width="290">
+<img src="img/t-krins.gif" alt="Animated T-Krins logo" hspace="1" vspace="1" border="0" height="48" width="290">
 <font size="-1">
-<br><a href="tranvals.wav">&quot;TRANDALSSONGEN&quot;.. som vals!<br>
+<br><a href="music/tranvals.wav">&quot;TRANDALSSONGEN&quot;.. som vals!<br>
 <br><i>&quot;The Song of Trandal&quot;.. as a waltz!</i></a><br>
 <font color="#ff0000">
 <br> [ = WAV fil]<br>
@@ -585,13 +234,13 @@ COMMENTS  -->
 <p><br><p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 <br><a href="forslag1.htm#forslag"><b>Forslagskassen</b> - <i>The Suggestion Box</i></a><br>
 </center>
 
@@ -623,9 +272,9 @@ COMMENTS  -->
 <p><center><b>6183 TRANDAL Vev-samtale,.. er enno under utvikling.</b><br>
 <br><i>6183 TRANDAL Web-chat,.. is still under development.</i><br></center></p>
 
-<center><img src="constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20">
-<img src="constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20">
-<img src="constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20">
+<center><img src="img/constr10.jpg" alt="JPG bilete, STOPP - under utvikling" hspace="10" vspace="2" border="0" height="20" width="20">
+<img src="img/constr10.gif" alt="GIF bilete STOPP - under utvikling" hspace="5" vspace="2" border="0" height="20" width="20">
+<img src="img/constr10.gif" alt="GIF bilete, STOPP - under utvikling" hspace="5" vspace="2" border="1" height="20" width="20">
 
 <br>
 [Orsaka... <i>Sorry</i>]
@@ -672,7 +321,7 @@ END COMMENT  -->
 			<td><br><b>13:00</b>-19:00<br><br>Azores<br></td>
 			<td><br><b>14:00</b>-20:00<br><br>Island<br></td>
 			<td><br><b>15:00</b>-21:00<br><br>England<br></td>
-			<td><br><font color="#ff0009"><b>16:00</b>-22:00</font color=""><br><br><img src="trandal4.bmp" alt="Trandal" hspace="0" vspace="0" border="1" height="25" width="63" align="left"><br></td>
+			<td><br><font color="#ff0009"><b>16:00</b>-22:00</font color=""><br><br><img src="img/trandal4.bmp" alt="Trandal" hspace="0" vspace="0" border="1" height="25" width="63" align="left"><br></td>
 			<td><br><b>17:00</b>-23:00<br><br>Finland<br></td>
 		</tr>
 		<tr>
@@ -707,7 +356,7 @@ END COMMENT  -->
 <br><b>(Viking: &quot;<u>Havam&aring;l</u>&quot;)</b><br>
 </center>
 
- 
+
 
 <p><br></p>
 
@@ -743,7 +392,7 @@ END COMMENT  -->
 <b>Vevmeisteren si &quot;handle&quot; namn:</b><br>
 <br><i>Webmaster's screen name:</i><br>
 <hr size="3" noshade="" width="50%">
- &nbsp; ==== &nbsp; 
+ &nbsp; ==== &nbsp;
 <font color="#ff0009"><b>V E V M E I S T E R</b></font color="">
  &nbsp; ==== &nbsp; <br>
 <hr size="3" noshade="" width="50%">
@@ -798,7 +447,7 @@ http://www.ceruleanstudios.com</a> &nbsp; Basic version</i> FREE<br>
 <br><i>Mailing list = ...<a href="http://lists.topica.com/">Topica</a> ??</i> email discussion lists... contact: family, friends, clients, &amp; colleagues.<br>
 <br><i>Mailing list = ...<a href="http://lists.icq.com">ICQ lists</a></i> ??<br>
 
-<br> 
+<br>
 
 <br><i>Message board = ...<a href="http://boards.icq.com">ICQ boards</a></i> ??<br>
 <br><i>Message board = ...<a href="http://www.icq.com/boards">ICQ boards</a></i> (mirror site) ??<br>
@@ -885,13 +534,13 @@ bin/news/db.cgi?db=ads&uid=default&ID=4913&C1=Internet/Online&view_records=1&ful
 <p><br></p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 </center>
 
 <p><br></p>
@@ -1090,8 +739,8 @@ http://srri.stud.hive.no</a><br>
 
 <tr>
 <td>
-<img src="kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
-<img src="kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
 Selje skule</td>
 <td><a href="http://www.______.no">www.______.no</a></td>
 <td align="center">JAT</td>
@@ -1099,8 +748,8 @@ Selje skule</td>
 
 <tr>
 <td>
-<img src="kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
-<img src="kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
 Skuleglimt</td>
 <td><a href="http://www.volda.vgs.no/skuleglimt.htm">www.volda.vgs.no/</a></td>
 <td align="center">OAT<br><br>& ET</td>
@@ -1108,8 +757,8 @@ Skuleglimt</td>
 
 <tr>
 <td>
-<img src="kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
-<img src="kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="2" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="2" border="0" height="19" width="12" align="left">
 <i>Where have all the Norskie &quot;squareheads&quot; gone?</i></td>
 <td><a href="http://www.bayridge.com/userpages/squarehd.html">www.bayridge.com/</a></td>
 <td align="center">PPH</td>
@@ -1132,12 +781,12 @@ www.magicbuddy.net</a></td>
 
 <tr>
 <td>
-<img src="kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="0" border="0" height="19" width="12" align="left">
-<img src="kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="0" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.jpg" alt="JPG, Kanskje ?? - Maybe ??" hspace="10" vspace="0" border="0" height="19" width="12" align="left">
+<img src="img/kanskje0.gif" alt="GIF, Kanskje ?? - Maybe ??" hspace="5" vspace="0" border="0" height="19" width="12" align="left">
 &quot;The Underground&quot; (e-games?..)<br>
 <br><i>Has this (expired?) <b>site</b> now become &quot;<b>hijacked</b>?&quot; by disreputable people?</i></td>
-<td><br><img src="constr10.jpg" alt="JPG, STOPP - ikkje ferdig enno." hspace="10" vspace="0" border="0" height="20" width="20" align="left">
-<a href="constr10.jpg">www.<b>trandal</b>.__k</a></td>
+<td><br><img src="img/constr10.jpg" alt="JPG, STOPP - ikkje ferdig enno." hspace="10" vspace="0" border="0" height="20" width="20" align="left">
+<a href="img/constr10.jpg">www.<b>trandal</b>.__k</a></td>
 <td align="center">_?_</td>
 </tr>
 
@@ -1196,13 +845,13 @@ http://biblio.iue.it/</a></td>
 <p><br></p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 <br><a href="forslag1.htm#forslag"><b>Forslagskassen</b> - <i>The Suggestion Box</i></a><br>
 </center>
 
@@ -1228,7 +877,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="t-song01.wav">&quot;<b>Trandalsongen</b>&quot; - komponisten Kjell Arne synger</a>,
+<td><a href="music/t-song01.wav">&quot;<b>Trandalsongen</b>&quot; - komponisten Kjell Arne synger</a>,
  WAV fil<br>
 <br>CD nr.12 = <b><a href="arnie-2k.htm">&quot;Arnie&quot;</a></b> TEKST = <a href="t-songen.htm">&quot;Trandalsongen&quot;</a><br>
 <br>t-song01.wav  &nbsp; &nbsp; Nedlastings tid<br>
@@ -1239,7 +888,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="t-sang-2.mid">&quot;<b>Trandalsongen</b>&quot; - Pianomusikk: arr. av Birger Wiik</a>, MIDI fil<br>
+<td><a href="music/t-sang-2.mid">&quot;<b>Trandalsongen</b>&quot; - Pianomusikk: arr. av Birger Wiik</a>, MIDI fil<br>
 <br>t-sang-2.mid &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right"> 5Kb</td>
@@ -1248,7 +897,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="t-song-2.wav">&quot;<b>Trandalsongen</b>&quot; - Pianomusikk: arr. av Birger Wiik</a>, WAV fil<br>
+<td><a href="music/t-song-2.wav">&quot;<b>Trandalsongen</b>&quot; - Pianomusikk: arr. av Birger Wiik</a>, WAV fil<br>
 <br>t-song-2.wav &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right"> 1.0 Mb</td>
@@ -1257,7 +906,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="tranvals.mid">&quot;<b>Trandalsongen</b>&quot; - arr. som vals av PPH</a>, MIDI fil<br>
+<td><a href="music/tranvals.mid">&quot;<b>Trandalsongen</b>&quot; - arr. som vals av PPH</a>, MIDI fil<br>
 <br>tranvals.mid &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right"> 7Kb</td>
@@ -1266,7 +915,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="tranvals.wav">&quot;<b>Trandalsongen</b>&quot; - arr. som vals av PPH</a>, WAV fil<br>
+<td><a href="music/tranvals.wav">&quot;<b>Trandalsongen</b>&quot; - arr. som vals av PPH</a>, WAV fil<br>
 <br>tranvals.wav &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right">536 Kb</td>
@@ -1275,12 +924,12 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td><a href="trandal.mid">&quot;<b>Trandalsongen</b>&quot;  • • som mobiltelefon</a> <b>ringetone</b> berre p&aring; nyare telefoner <br>
+<td><a href="music/trandal.mid">&quot;<b>Trandalsongen</b>&quot;  • • som mobiltelefon</a> <b>ringetone</b> berre p&aring; nyare telefoner <br>
 <br><i>Cell-phone ring - -  only on latest model phones.</i><br>
 <br>trandal-2.wap &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i>
 <br>
-<img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="5" vspace="0" border="0" height="20" width="20" align="left">
+<img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="5" vspace="0" border="0" height="20" width="20" align="left">
 (Under utvikling. &nbsp; &nbsp; <i> Under development.</i>)<br></td>
 <td align="right">998 bytes</td>
 </tr>
@@ -1288,7 +937,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>LYD</b><br>
 <br>Sound</td>
-<td>Er det &quot;Glade Grisene&quot; som spiller <b><a href="koster_v.mid">&quot;Koster Valsen&quot;</a></b> p&aring; grendehuset?<br>
+<td>Er det &quot;Glade Grisene&quot; som spiller <b><a href="music/koster_v.mid">&quot;Koster Valsen&quot;</a></b> p&aring; grendehuset?<br>
 <br>Are &quot;The Happy Pigs&quot; playing <b>&quot;<u>The Broom Waltz</u>&quot;</b> at the Grange House?<br>
 <br>koster_v.mid &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
@@ -1298,7 +947,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>FOTO</b><br>
 <br>Photo</td>
-<td><a href="tran1949.jpg"><b>1949 - Ytre Trandal:</b> Bakkene og Arnegarden</a><br>
+<td><a href="img/tran1949.jpg"><b>1949 - Ytre Trandal:</b> Bakkene og Arnegarden</a><br>
 <br>tran1949.jpg &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right">1.2 Mb</td>
@@ -1307,7 +956,7 @@ http://biblio.iue.it/</a></td>
 <tr>
 <td><b>FOTO</b><br>
 <br>Photo</td>
-<td><a href="tran2003.jpg"><b>2003 - Ytre Trandal:</b> Bakkene og Arnegarden</a><br>
+<td><a href="img/tran2003.jpg"><b>2003 - Ytre Trandal:</b> Bakkene og Arnegarden</a><br>
 <br>tran2003.jpg &nbsp; &nbsp; Nedlastings tid<br>
 <br>&nbsp; &nbsp; &nbsp; &nbsp; <i> Download time: (14400 bps) under 1 min.</i></td>
 <td align="right">389 Kb</td>
@@ -1319,8 +968,8 @@ http://biblio.iue.it/</a></td>
 <td>
 <b>&quot;Postkort fr&aring; Trandal&quot;</b> - -  <i>&quot;Postcard from Trandal&quot;</i><br>
 <br>
-<img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="5" vspace="0" border="0" height="20" width="20" align="left">
-<a href="constr10.jpg">1968 - Trandal: Rob&aring;t - Rowboat</a> 1968.jpg</td>
+<img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="5" vspace="0" border="0" height="20" width="20" align="left">
+<a href="img/constr10.jpg">1968 - Trandal: Rob&aring;t - Rowboat</a> 1968.jpg</td>
 <td align="right">• PPH •</td>
 </tr>
 
@@ -1373,13 +1022,13 @@ COMMENTS -->
 <p><br></p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 <br><a href="forslag1.htm#forslag"><b>Forslagskassen</b> - <i>The Suggestion Box</i></a><br>
 </center>
 
@@ -1394,19 +1043,19 @@ COMMENTS -->
 <align="left"></align="left"></font>
 <b>HELSINGAR</b> - <i>Greetings</i>...<br>
 <br>
-<br><img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
+<br><img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
  &nbsp; <a href="helsing3.htm#topp">Gratulerer !</a> - <i>Congratulations !</i><br>
 <br>
-<br><img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
+<br><img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
  &nbsp; <a href="helsing1.htm#topp">Nytt&aring;r</a> - <i>Happy New Year</i><br>
 <br>
-<br><img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
+<br><img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
  &nbsp; <a href="helsing2.htm#topp">P&aring;ske</a> - <i>Happy Easter</i><br>
 <br>
-<br><img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
+<br><img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
  &nbsp; <b><a href="helsing4.htm#topp">17de mai</a></b> - <i>17th of May</i><br>
 <br>
-<br><img src="constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
+<br><img src="img/constr10.jpg" alt="JPG, STOPP - under utvikling" hspace="0" vspace="0" border="0" height="20" width="20" align="left">
  &nbsp; <a href="helsing5.htm#topp">Midtsommar</a> - <i>Mid-Summer Greetings</i><br>
 <br>
 <br><b><a href="helsing8.htm#topp">Jul p&aring; Trandal</a></b> - <i>Christmas on Trandal</i><br>
@@ -1429,7 +1078,7 @@ COMMENTS -->
 <center><hr width="100%"></center></td></tr></table></center>
 
 <center>
-<img src="trankrin.jpg" alt="Trandal krins" hspace="10" vspace="10" border="0" height="65" width="302">
+<img src="img/trankrin.jpg" alt="Trandal krins" hspace="10" vspace="10" border="0" height="65" width="302">
 </center>
 
 
@@ -1480,7 +1129,7 @@ COMMENTS -->
 <center><hr width="100%"></center></td></tr></table></center>
 
 <center>
-<img src="trkrlog4.jpg" alt="Trandal Krins logo" hspace="10" vspace="10" border="0" height="118" width="414">
+<img src="img/trkrlog4.jpg" alt="Trandal Krins logo" hspace="10" vspace="10" border="0" height="118" width="414">
 </center>
 
 <b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Trandal Krins<br>
@@ -1571,13 +1220,13 @@ PPH.
 <p><br></p>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 <br><a href="forslag1.htm#forslag"><b>Forslagskassen</b> - <i>The Suggestion Box</i></a><br>
 </center>
 
@@ -1627,13 +1276,13 @@ PPH.
 <br>
 
 <center>
-<a href="#topp"><b>Topp av side</b><img src="opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
+<a href="#topp"><b>Topp av side</b><img src="img/opp-pil1.bmp" alt="Topp" hspace="1" vspace="0" border="0" height="31" width="23"><i>Top of page</i></a>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="index-1.htm#topp"><b>Hovudside</b> <img src="trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
+<a href="index-1.htm#topp"><b>Hovudside</b> <img src="img/trandal5.bmp" alt="Til TRANDAL hovudside - To TRANDAL main page" hspace="0" vspace="0" border="0" height="22" width="75"> <i>Main page</i></a>
 </center>
 
 <center>
-<img src="vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
+<img src="img/vik-lin3.bmp" alt="Viking decorative line, red and blue" hspace="1" vspace="1" border="0" height="25" width="513"><br>
 <br><a href="forslag1.htm#forslag"><b>Forslagskassen</b> - <i>The Suggestion Box</i></a><br>
 </center>
 
@@ -1654,7 +1303,7 @@ PPH.
 reserved</font>
 </div>
 <center>
-<img src="hidco-03.jpg" alt="Hidco logo JPG" hspace="10" vspace="5" border="1" height="70" width="100">
+<img src="img/hidco-03.jpg" alt="Hidco logo JPG" hspace="10" vspace="5" border="1" height="70" width="100">
 </center>
 <center><font size="-2">N-6183 TRANDAL &nbsp; - - - &nbsp; New York City
 11209 USA</font></center>
